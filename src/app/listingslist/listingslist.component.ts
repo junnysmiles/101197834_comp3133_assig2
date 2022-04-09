@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListingslistComponent implements OnInit {
 
+  value = 'Search';
+
   constructor() { }
 
   ngOnInit(): void {

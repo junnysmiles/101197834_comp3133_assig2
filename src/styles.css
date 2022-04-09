@@ -3,7 +3,7 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-.example-spacer {
+.spacer {
   flex: 1 1 auto;
 }
 
@@ -11,4 +11,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   width: 25px;
   height: auto;
   display: inline-block;
+}
+
+.field-width {
+  width: 30%;
 }

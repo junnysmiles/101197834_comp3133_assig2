@@ -4,4 +4,27 @@
       <a href="/"><mat-icon style="padding: 40px 0px 20px 50px; font-size:50px;" color="accent">arrow_back_ios</mat-icon></a>
     </h1>
   </div>
+  <div style="text-align: center;">
+    <h1 class="mat-display-2">Login</h1>
+  </div>
+  <div style="text-align: center;">
+    <mat-form-field class="field-width" appearance="fill">
+      <mat-label>Enter your email</mat-label>
+      <input matInput placeholder="pat@example.com" required>
+      <mat-error *ngIf="email.invalid">{{getEmailErrorMessage()}}</mat-error>
+    </mat-form-field>
+  </div>
+  <div style="text-align: center;">
+    <mat-form-field class="field-width" appearance="fill">
+      <mat-label>Enter your password</mat-label>
+      <input matInput [type]="hide ? 'password' : 'text'">
+      <mat-error *ngIf="password.invalid">{{getPassErrorMessage()}}</mat-error>
+      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+    </mat-form-field>
+  </div>
+  <div style="text-align: center;">
+    <button mat-raised-button>Login</button>
+  </div>
 </body>
