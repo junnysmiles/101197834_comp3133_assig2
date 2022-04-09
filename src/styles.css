@@ -16,3 +16,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .field-width {
   width: 30%;
 }
+
+.center-text {
+  text-align: center;
+}
