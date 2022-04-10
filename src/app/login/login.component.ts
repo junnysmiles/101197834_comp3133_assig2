@@ -13,16 +13,16 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  email = new FormControl('', [Validators.required, Validators.email]);
+  username = new FormControl('', [Validators.required]);
   password = new FormControl('', [Validators.required]);
   hide = true;
 
-  getEmailErrorMessage() {
-    if (this.email.hasError('required')) {
-      return 'You must enter your email!';
+  getUsernameErrorMessage() {
+    if (this.username.hasError('required')) {
+      return 'You must enter your username!';
     }
 
-    return this.email.hasError('email') ? 'Not a valid email' : '';
+    return this.username.hasError('username') ? 'Not a valid username' : '';
   }
 
   getPassErrorMessage() {

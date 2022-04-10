@@ -15,8 +15,15 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .field-width {
   width: 30%;
+  padding-bottom: 8px;
 }
 
 .center-text {
   text-align: center;
+}
+
+.divider {
+  width: 80%;
+  padding-top: 50px;
+  padding-left: 150px;
 }
